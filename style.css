@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --black: #0f0f0f00;
+    --primary: #0096FF;
+    --dark: #3D3838;
+    --grey-medium: #928D8D;
+    --grey-light: #EFEFEF;
+    --light: #f5f4f4;
+}
+
+body{
+    color: var(--light);
+    background-color: var(--light);
+    padding-top: 80px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--grey-light)
+}
+
+header {
+
+    background-color: var(--dark);
+    
+    display: grid;
+    grid-template-columns: 100px 1fr;
+
+    position: fixed;
+    width: 100%;
+    top:0;
+
+    height: 80px;
+    border-bottom: 1px solid var(--grey-medium);
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1.5rem;
+    cursor: default;
+    user-select: none;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 3rem;
+    font-size: 1rem;
+}
+
+.nav__list{
+    display: flex;
+    gap: 3rem;
+}
+
+.navigation a:hover{
+    color: var(--grey-medium);
+    cursor: pointer;
+}
+
+.hamburger{
+    display: none;
+}
+
+.hamburger.item {
+    width: 3rem;
+    height: 3rem;
+}
+
+.hamburger__item {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.bar{
+    height: 2px;
+    width: 20px;
+    background-color: var(--light);
+    margin: 5px;
+}
+
+@media (max-width: 600px) {
+    .navigation{
+        position: fixed;
+
+        top:0;
+        width:100%;
+        padding-top: 6rem;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transform: translateY(-100%)
+    }
+
+    .nav__list {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .hamburger {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        padding-right: 3rem;
+    } 
+}
