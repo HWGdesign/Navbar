@@ -3,40 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NavBar</title>
     <link rel="stylesheet" href="style.css" />
+    <title>Navbar</title>
   </head>
   <body>
-    <header class="header">
-      <div class="logo">
-        <a class="logo--item">HWG</a>
-      </div>
+    <header>
+      <nav class="navbar">
+        <a href="#">
+          <img src="img/white.png" alt="logo" />
+        </a>
 
-      <div class="navigation">
-        <nav>
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#">Home</a>
-            </li>
-            <li class="nav__item">
-              <a href="#">Portfolio</a>
-            </li>
-            <li class="nav__item">
-              <a href="#">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="hamburger">
-        <div class="hamburger__item">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-      </div>
+      </nav>
     </header>
-
-    <main>some content..</main>
     <script src="script.js"></script>
   </body>
 </html>
